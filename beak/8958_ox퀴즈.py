@@ -8,14 +8,19 @@
 # 입력
 # 첫째 줄에 테스트 케이스의 개수가 주어진다. 각 테스트 케이스는 한 줄로 이루어져 있고, 길이가 0보다 크고 80보다 작은 문자열이 주어진다. 문자열은 O와 X만으로 이루어져 있다.
 
-# t = int(input())
-# for i in range(t):
-#     a = list(input().split())
+t = int(input())
+for i in range(t):
+    la = input()
+    score = 0
+    st = []
+    for i in range(len(la)):
+        if la[i] == 'O':
+            st.append(la[i])
+            score += len(st)
+        else:
+            st = []
 
-la = input()
-score = 0
-for i in range(len(la)):
-    
+    print(score)
 
 
 
