@@ -10,7 +10,16 @@
 # 첫째 줄에 그룹 단어의 개수를 출력한다.
 
 test_case = int(input())
-
+cnt = test_case
 for t in range(test_case):
     a = input()
+    la = []
 
+    for i in range(len(a)):
+        if a[i] != a[i+1]:
+            la.append(a[i])
+    print(la)
+    if len(la) != len(set(la)):
+        cnt -= 1
+
+print(cnt)
